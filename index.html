@@ -6,13 +6,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Premier League</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
 </head>
 <body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center mt-5">
+                <div class="profileimage">
+                    <img src="./assets/images/profile-avatar.jpg" alt="" style="background-color: blue;" width="100" height="100">
+                    <p class="mt-3 font-weight-bold" style="margin-bottom: 0px;">Michael Solomon</p>
+                    <p style="margin-top: 4px; margin-bottom: 0px;">Ruphael</p>
+                    <p style="margin-top: 2px;">🇪🇹</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p style="margin-bottom: 0px;">1000</p>
+                            <p style="margin-top: 2px; font-size: 12px; font-weight: bold;">Total Points</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p style="margin-bottom: 0px;">756</p>
+                            <p style="margin-top: 2px; font-size: 12px; font-weight: bold;">Overall Ranking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group list-group-flush sidenavigation">
+                <div style="height: 1px; background-color: lightgrey;"></div>
+                <a href="#" class="list-group-item list-group-item-action">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-windows"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overview</a>
+                <a href="#" class="list-group-item list-group-item-action">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Team</a>
+                <a href="#" class="list-group-item list-group-item-action">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tshirt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Points</a>
+                <a href="#" class="list-group-item list-group-item-action">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-exchange-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transfers</a>
+                <a href="#" class="list-group-item list-group-item-action">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-baseball-ball"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;League</a>
+                <a href="#" class="list-group-item list-group-item-action">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-percentage"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fixtures</a>
+                <a href="#" class="list-group-item list-group-item-action">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-registered"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rules</a>
+            </div>
+        </div>
+        <!-- Main Content View -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg border-bottom">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="clublist mt-2 mt-lg-0" role="menu">
+                    <!-- Arsenal -->
+                    <li class="clubitem">
+                        <a href="http://www.arsenal.com?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t3.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Aston Villa -->
+                    <li class="clubitem">
+                        <a href="https://www.avfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t7.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Brighton and Hove Albion -->
+                    <li class="clubitem">
+                        <a href="https://www.brightonandhovealbion.com?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t36.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Burnley -->
+                    <li class="clubitem">
+                        <a href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t90.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Chelsea -->
+                    <li class="clubitem">
+                        <a href="https://www.chelseafc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t8.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Crystal Palace -->
+                    <li class="clubitem">
+                        <a href="http://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t31.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Everton -->
+                    <li class="clubitem">
+                        <a href="http://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t11.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Fulham -->
+                    <li class="clubitem">
+                        <a href="http://www.fulhamfc.com?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t54.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Leeds -->
+                    <li class="clubitem">
+                        <a href="http://www.leedsunited.com?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t2.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Leicester City -->
+                    <li class="clubitem">
+                        <a href="http://www.lcfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t13.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Liverpool -->
+                    <li class="clubitem">
+                        <a href="http://www.liverpoolfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t14.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Manchester City -->
+                    <li class="clubitem">
+                        <a href="https://www.mancity.com?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t43.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Manchester United -->
+                    <li class="clubitem">
+                        <a href="http://www.manutd.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t1.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Newcastle United -->
+                    <li class="clubitem">
+                        <a href="https://www.nufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t4.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Sheffield United -->
+                    <li class="clubitem">
+                        <a href="https://www.sufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t49.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Southampton -->
+                    <li class="clubitem">
+                        <a href="https://www.southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t20.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Tottenham / Spurs-->
+                    <li class="clubitem">
+                        <a href="https://www.southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t6.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- West bromich albion -->
+                    <li class="clubitem">
+                        <a href="http://www.wba.co.uk?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t35.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Westham -->
+                    <li class="clubitem">
+                        <a href="http://www.whufc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t21.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Wolverhampton Wanderers -->
+                    <li class="clubitem">
+                        <a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" class="menuitem" target="_blank">
+                            <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image">
+                                <img src="https://resources.premierleague.com/premierleague/badges/25/t39.png" class="badge-image badge-image--25 js-badge-image" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>        
+              </div>
+            </nav>      
+            <div class="container-fluid">
+                <h1 class="mt-4">Simple Sidebar</h1>
+                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+            </div>
+        </div>
+    </div>
+
     
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        });
+    </script>
 </body>
 </html>
