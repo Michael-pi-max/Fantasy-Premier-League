@@ -27,3 +27,112 @@
 .sidenavigation a:hover{
     border-left: 4px solid #FE035D;
 }
+
+.gameweektitle{
+    font-size: 32px;
+}
+
+.score{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.score-title{
+    color: grey;
+    font-size: 14px;
+}
+
+.gameweekscore{
+    background-color: #FE035D;
+    padding: 1px 10px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.check{
+    background-color: grey;
+}
+
+#page-content-wrapper{
+    background: #ECF2F6;
+}
+
+.pointsbox{
+    background: white;
+}
+
+/* first card box texts */
+.pointhistorytext{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.yourpointtext, .totalpoint{
+    font-size: 15px;
+    color: lightgrey;
+}
+
+.averagepointtext{
+    font-size: 14px;
+    color: lightgrey;
+}
+
+.overallpoints, .averagepoint{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pointsbox{
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
+    -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
+    box-shadow:         3px 3px 5px 6px rgb(224,237,243);
+    height: 350px;
+}
+
+.starplayer{
+    background: #FD6192;
+    height: 150px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
+    -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
+    box-shadow:         3px 3px 5px 6px rgb(224,237,243);
+}
+
+.mostrransfer{
+    background: white;
+    height: 90px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
+    -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
+    box-shadow:         3px 3px 5px 6px rgb(224,237,243);
+}
+
+.mostcaptained{
+    background: white;
+    height: 90px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
+    -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
+    box-shadow:         3px 3px 5px 6px rgb(224,237,243);
+}
+
+.deadlinecounter{
+    background: white;
+    border-radius: 10px;
+    height: 350px;
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
+    -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
+    box-shadow:         3px 3px 5px 6px rgb(224,237,243);
+}
+
+.countdown{
+    background: white;
+    height: 200px;
+}
+
+.injuredplayers{
+    height: 150px;
+    background: #F1F4F7;
+    border-radius: 10px;
+}
