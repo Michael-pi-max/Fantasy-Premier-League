@@ -136,3 +136,58 @@
     background: #F1F4F7;
     border-radius: 10px;
 }
+
+
+/* NEWS SECTION */
+.newsSection{
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
+    -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
+    box-shadow:         3px 3px 5px 6px rgb(224,237,243);
+}
+
+.newsHeadline{
+    height: 175px;  
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+.newsDescription{
+    height: 150px;
+    border-radius: 10px;
+}
+
+.newsimage{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.newsclock{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.newstime{
+    padding-left: 30px;
+}
+
+.newsduration{
+    padding-left: 120px;
+}
+
+/* Transfer in and out stat */
+.transferinandout{
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
+    -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
+    box-shadow:         3px 3px 5px 6px rgb(224,237,243);
+}
+
+/* Fixtures */
+.fixturedate{
+    color: #FE035D;
+}
