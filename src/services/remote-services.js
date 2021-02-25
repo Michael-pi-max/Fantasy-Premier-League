@@ -1,4 +1,7 @@
 import {eventFromJson} from '../models/Event.js';
+import {elementFromJson} from '../models/Element.js';
+import { fixturesFromJson } from '../models/Fixtures.js';
+import {teamsFromJson} from '../models/Team.js'
 
 export class RemoteService{
     //Return the gameweek events mapping each gameweek to our own Gameweek Object
@@ -13,6 +16,48 @@ export class RemoteService{
             data = 'Please, Try Again'
         }
     }
+
+    async fetchElements(){
+        const uri = `https://greenethiopia.net/api/v1/fpl`;
+        let response = await fetch(uri);
+        let res = await response.json();
+        if(response.status === 200){
+            let data = res["obj"]["elements"]
+            return elementFromJson(data);
+        }else{
+            data = 'Please, Try Again'
+        }   
+    }
+
+    async fetchFixtures(){
+        const uri = `https://greenethiopia.net/api/v1/fixtures`;
+        let response = await fetch(uri);
+        let res = await response.json();
+        if(response.status === 200){
+            let data = res
+            return fixturesFromJson(data);
+        }else{
+            data = 'Please, Try Again'
+        }   
+    }
+
+    async fetchTeams(){
+        const uri = `https://greenethiopia.net/api/v1/fpl`
+        let response = await fetch(uri);
+        let res = await response.json();
+        if(response.status === 200){
+            let data = res['obj']['teams']
+            return teamsFromJson(data);
+        }else{
+            data = 'Please, Try Again'
+        }  
+    }
+
+    // async fetchTotalPlayers(){
+    //     const uri = `https://greenethiopia.net/api/v1/fpl`;
+    //     let response = await fetch
+    // }
+    
 }
 
 
