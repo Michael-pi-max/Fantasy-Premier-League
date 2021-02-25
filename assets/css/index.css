@@ -149,7 +149,7 @@
 
 .newsHeadline{
     height: 175px;  
-    background-color: darkblue;
+    background-color: #FE035D;
     border-radius: 10px;
 }
 
@@ -161,7 +161,6 @@
 .newsimage{
     width: 100px;
     height: 100px;
-    background-color: orange;
 }
 
 .newsclock{
@@ -182,6 +181,7 @@
 .transferinandout{
     background: white;
     border-radius: 10px;
+    height: 660px;
     -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
     -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
     box-shadow:         3px 3px 5px 6px rgb(224,237,243);
@@ -190,4 +190,22 @@
 /* Fixtures */
 .fixturedate{
     color: #FE035D;
+}
+
+.fixturebox{
+    height: 100px;
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
+    -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
+    box-shadow:         3px 3px 5px 6px rgb(224,237,243);
+}
+
+.fixturebox:hover{
+    border-left: 10px solid #36023B;
+    transform: scale(1.08);
+}
+
+.fixtureseemore{
+    margin-left: 270px;
 }
