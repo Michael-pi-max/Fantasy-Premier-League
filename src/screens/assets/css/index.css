@@ -181,7 +181,7 @@
 .transferinandout{
     background: white;
     border-radius: 10px;
-    height: 660px;
+    height: 300px;
     -webkit-box-shadow: 3px 3px 5px 6px rgb(224,237,243);  
     -moz-box-shadow:    3px 3px 5px 6px rgb(224,237,243); 
     box-shadow:         3px 3px 5px 6px rgb(224,237,243);
@@ -208,4 +208,69 @@
 
 .fixtureseemore{
     margin-left: 270px;
+}
+
+.hometeam{
+    padding-right: 0;
+}
+
+.awayteam{
+    padding-left: 0;
+}
+
+.versus{
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fixturetime{
+    font-size: 22px;
+    color: #FE035D;
+    font-weight: bold;
+}
+
+.fixtureplace{
+    font-size: 12px;
+}
+
+/* Basic Information */
+.mosttransferredin{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.mostcaptainedin{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.starplayertitle{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.starplayerfirstname{
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 0;
+}
+
+.starplayerlastname{
+    padding-top: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.starplayerteam{
+    color: #fff;
+    font-size: 12px;
+}
+
+.starplayerpoints{
+    color: #fff;
+    font-size: 28px;
 }
