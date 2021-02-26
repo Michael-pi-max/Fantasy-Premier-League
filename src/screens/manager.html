@@ -492,6 +492,29 @@
         </div>
     </div>
 
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        let gameweekpage = parseInt(urlParams.get("gameweekpage"));
+        if(!gameweekpage){
+            gameweekpage = 0;
+        }
+        let prev = gameweekpage;
+        let next = gameweekpage;
+
+        const prevview = document.querySelector('#prevview')
+        const nextview = document.querySelector('#nextview')
+
+        if (gameweekpage > 1) {
+            prev -= 1
+        }
+        if (gameweekpage < 37) {
+            next += 1
+        }
+
+        prevview.firstElementChild.setAttribute("href", `./manager.html?gameweekpage=${prev}`)
+        nextview.firstElementChild.setAttribute("href", `./manager.html?gameweekpage=${next}`)
+
+    </script>
     
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
